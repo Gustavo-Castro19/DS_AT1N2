@@ -6,7 +6,8 @@ Projeto de classificação supervisionada de `Loan_Status` usando Gaussian Naive
 
 - `data/realistic_credit_scoring_dataset-1.csv`: base fornecida no projeto.
 - `notebooks/data_fraud.ipynb`: notebook executável da análise.
-- `Trabalho_Ciencia_de_Dados_Python.docx`: enunciado.
+- `relatorio.pdf` e `relatorio.html`: relatório e fonte editável.
+- `resultados/`: gráficos PNG gerados pelo notebook.
 - `requirements.txt`: dependências Python.
 
 ## Como executar
@@ -18,7 +19,7 @@ python -m pip install -r requirements.txt
 jupyter notebook notebooks/data_fraud.ipynb
 ```
 
-Execute todas as células em ordem a partir do diretório `notebooks/`. O notebook usa divisão estratificada, semente 42, validação cruzada de cinco folds e mantém a imputação dentro do pipeline. `Default_Probability` foi excluída da análise principal por sua associação muito forte com o alvo e incerteza de disponibilidade no momento da previsão.
+Execute todas as células em ordem. O notebook cria `resultados/` na raiz do projeto e salva nela os gráficos PNG. O notebook usa divisão estratificada, semente 42, validação cruzada de cinco folds e mantém a imputação dentro do pipeline. `Default_Probability` foi excluída da análise principal por sua associação muito forte com o alvo e incerteza de disponibilidade no momento da previsão.
 
 ## Dados e limitações
 
